@@ -4,8 +4,6 @@
 
 This project applies mean-variance optimization to eight U.S. equities using monthly adjusted-price data from January 2015 through December 2023. Excel Solver was used to construct a global minimum-variance portfolio, a maximum-Sharpe portfolio, and a ten-point minimum-variance frontier. The optimized portfolio was then evaluated using a market regression, the Fama-French three-factor model, and the Carhart four-factor model in Stata.
 
-This repository is a corrected and portfolio-ready version of an EC4417 Asset Pricing group project completed at the University of St Andrews. The original submission is retained in `report/original_group_report.pdf`; the public analysis corrects labeling, specification, and interpretation issues identified during review.
-
 ## Headline results
 
 - The maximum-Sharpe portfolio achieved an **in-sample annualized Sharpe ratio of 0.925**, compared with **0.900 for SPY**.
@@ -13,15 +11,6 @@ This repository is a corrected and portfolio-ready version of an EC4417 Asset Pr
 - The global minimum-variance portfolio had an annualized return of approximately **10.1%**, volatility of **15.2%**, and Sharpe ratio of **0.581**.
 - The Fama-French three-factor and Carhart four-factor models explained only approximately **2%-3%** of the optimized portfolio's monthly return variation.
 - The optimized portfolio required concentrated positions and short exposures, limiting the economic significance of its small Sharpe advantage over SPY.
-
-## Corrections made
-
-1. **Standard deviation:** The original descriptive table mistakenly displayed standard errors in the row labeled “SD.” This repository reports true monthly standard deviations.
-2. **Kurtosis:** Excel's `KURT` function reports excess kurtosis. A normal distribution therefore has expected excess kurtosis of zero, not three.
-3. **Market regression:** The original Stata specification reversed the dependent and explanatory variables. The corrected model regresses optimized-portfolio excess returns on S&P 500 excess returns.
-4. **CAL terminology:** The frontier output distinguishes the portfolio Sharpe ratio from the risk-premium coordinate on the Capital Allocation Line.
-5. **Alpha interpretation:** Positive in-sample alpha is not treated as proof of underpricing or management skill.
-6. **Benchmark framing:** The P portfolio's modest Sharpe advantage is presented alongside its higher volatility, short positions, concentration, and absence of out-of-sample testing.
 
 ## Repository structure
 
@@ -59,7 +48,3 @@ The eight-stock universe contains Cigna, Ford, IBM, Johnson & Johnson, Micron Te
 ## Key limitations
 
 The analysis is entirely in-sample. Expected returns, covariances, weights, and performance are estimated over the same period. Results do not account for transaction costs, taxes, short-borrow fees, or implementation constraints. Mean-variance portfolios are sensitive to estimation error, and the maximum-Sharpe portfolio contains substantial short and concentrated positions.
-
-## Group-project attribution
-
-The original assignment was completed collaboratively by a three-person group. This repository does not claim sole authorship of the original submission. It presents a corrected, reorganized version for portfolio review, with the original group report preserved for transparency.
