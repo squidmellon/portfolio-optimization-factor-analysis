@@ -7,7 +7,7 @@ Monthly adjusted closing prices from January 2015 through December 2023 were use
 Monthly holding-period return was calculated as the percentage change in adjusted closing price. The factor-regression data are expressed in percentage points.
 
 ## Descriptive analysis
-The portfolio version reports mean monthly return, sample monthly standard deviation, skewness, excess kurtosis, and Jarque-Bera normality-test p-values. The original report's standard-deviation row was corrected because it referenced standard errors.
+The portfolio version reports mean monthly return, sample monthly standard deviation, skewness, excess kurtosis, and Jarque-Bera normality-test p-values. 
 
 ## Portfolio optimization
 A sample covariance matrix was estimated from monthly returns. Excel Solver was used to:
