@@ -1,1 +1,0 @@
-Before applying a software license, confirm that all collaborators agree to public distribution of jointly authored code and workbooks. Third-party market and factor data remain subject to their original providers' terms.
