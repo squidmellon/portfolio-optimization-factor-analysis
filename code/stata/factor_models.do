@@ -1,6 +1,6 @@
 *******************************************************
 * Portfolio Optimization & Factor Analysis
-* Corrected, reproducible asset-pricing regressions
+* Reproducible asset-pricing regressions
 * Input: data/processed/factor_regression_data.csv
 *******************************************************
 
@@ -45,7 +45,7 @@ estimates store JNJ_Carhart4
 estimates table Market FF3 Carhart4 JNJ_Carhart4, ///
     b(%9.4f) se(%9.4f) stats(N r2 r2_a)
 
-* Optional log for GitHub review
+* log for GitHub 
 log using "`outdir'/stata_regression_log.txt", text replace
 estimates table Market FF3 Carhart4 JNJ_Carhart4, ///
     b(%9.4f) se(%9.4f) stats(N r2 r2_a)
